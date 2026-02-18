@@ -7,6 +7,12 @@ userRollResponseString = input( "Press 1 to roll the die: " )
 # Converting user Roll Response that was a string
 userRollResponseInt = int(userRollResponseString)
    
+if userRollResponseInt = 1
+    random()
+else 
+
+
+
    
 while userRollResponseInt != 1:
     userRollResponseString = input( "Please remember to Press 1 to roll the die: " )

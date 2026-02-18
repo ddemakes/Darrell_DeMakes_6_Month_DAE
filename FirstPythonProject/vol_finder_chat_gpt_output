@@ -1,0 +1,84 @@
+# simple_volunteer_fit.py
+# Beginner-style script implementing the flowchart logic
+
+def preload_data():
+    # small example database (name -> biography text)
+    volbios = {
+        "Alice": "I have managed events and taught children in afterschool programs.",
+        "Bob": "I enjoy fixing cars and using tools. I have worked in auto repair.",
+        "Cara": "I have taught classes and helped students learn reading and math run."
+    }
+
+    # role -> list of keywords to look for in the bio
+    volroles = {
+        "Event Coordinator": ["event", "coordinate", "organize", "volunteer"],
+        "Mechanic": ["car", "fix", "tools", "repair", "mechanic"],
+        "Teacher": ["teach", "teacher", "class", "students", "tutor"]
+    }
+
+    return volbios, volroles
+
+
+def get_name():
+    name = input("Enter volunteer's full name: ").strip()
+    return name
+
+
+def user_in_db(name, volbios):
+    return name in volbios
+
+
+def index_and_compare(bio, roles):
+    counts = {}
+    bio_lower = bio.lower()
+    for role, keywords in roles.items():
+        count = 0
+        for kw in keywords:
+            count += bio_lower.count(kw)
+        counts[role] = count
+    return counts
+
+
+def display_top_matches(counts):
+    sorted_roles = sorted(counts.items(), key=lambda x: x[1], reverse=True)
+    top_three = sorted_roles[:3]
+    if top_three and top_three[0][1] > 0:
+        print("Top role matches (role : count):")
+        for role, c in top_three:
+            print(role, ":", c)
+        return True
+    else:
+        return False
+
+
+def main():
+    volbios, volroles = preload_data()
+
+    while True:
+        name = get_name()
+
+        if not user_in_db(name, volbios):
+            print("Volunteer not found.")
+            again = input("Try another name? (y/n): ").lower()
+            if again != 'y':
+                print("Thank you for using the program.")
+                break
+            else:
+                continue
+
+        bio = volbios[name]
+        counts = index_and_compare(bio, volroles)
+
+        matched = display_top_matches(counts)
+
+        if not matched:
+            print("No good keyword matches found. Please review the bio manually.")
+
+        use_again = input("Analyze another volunteer? (y/n): ").lower()
+        if use_again != 'y':
+            print("Thank you for using the program.")
+            break
+
+
+if __name__ == "__main__":
+    main()
