@@ -1,0 +1,68 @@
+# simple_volunteer_fit_no_functions.py
+# Very simple beginner-style script that follows your flowchart.
+# No functions, only while/for loops and basic statements.
+
+# 1) preload data
+volbios = {
+    "Alice": "I have managed events and taught children in afterschool programs.",
+    "Bob": "I enjoy fixing cars and using tools. I have worked in auto repair.",
+    "Cara": "I have taught classes and helped students learn reading and math."
+}
+
+volroles = {
+    "Event Coordinator": ["event", "coordinate", "organize", "volunteer"],
+    "Mechanic": ["car", "fix", "tools", "repair", "mechanic"],
+    "Teacher": ["teach", "teacher", "class", "students", "tutor"]
+}
+
+# 2) main loop control
+running = True
+
+while running:
+    # 3) get name from user
+    name = input("Enter volunteer's full name: ").strip()
+
+    # 4) check if user is in the "database"
+    if name not in volbios:
+        print("Volunteer not found.")
+        again = input("Try another name? (y/n): ").lower()
+        if again != 'y':
+            print("Thank you for using the program.")
+            running = False
+        else:
+            # go back to start of while loop
+            continue
+
+    # 5) get biography and prepare for searching
+    bio = volbios[name]
+    bio_lower = bio.lower()
+
+    # 6) count keyword matches for each role
+    counts = {}
+    for role in volroles:
+        count = 0
+        keywords = volroles[role]
+        for kw in keywords:
+            count = count + bio_lower.count(kw)
+        counts[role] = count
+
+    # 7) make sortable list and pick top 3
+    pairs = []
+    for role in counts:
+        pairs.append((counts[role], role))
+    pairs.sort(reverse=True)   # sorts by count descending because count is first item
+    top_three = pairs[:3]
+
+    # 8) display results or manual review message
+    if top_three and top_three[0][0] > 0:
+        print("Top role matches (role : count):")
+        for pair in top_three:
+            print(pair[1], ":", pair[0])
+    else:
+        print("No good keyword matches found. Please review the bio manually.")
+
+    # 9) Ask user whether to run again
+    use_again = input("Analyze another volunteer? (y/n): ").lower()
+    if use_again != 'y':
+        print("Thank you for using the program.")
+        running = False
