@@ -1,13 +1,14 @@
 # 1) preload data
 volbios = {
-    "Alice": "I create events where I work.  I also lead volunteer activities for a local charity.  I do outreach and advertising for a different charity",
+    "Alice": "I create events where I work.  I also lead volunteer activities for a local charity.  I create advertising for a different charity",
     "Bob": "I organize social media for my pickleball league events and enjoy marketing. I have worked in sales and engagement.",
-    "Cara": "I work in retention and outreach for a non-profit.  I handle social media for their events."
+    "Cara": "I work in retention and outreach for a non-profit.  I handle planning for their events.",
+    "David": "I am an alien from planet Blorg. We don't do work as you do, so I have no transferable skills.  I just want to help out and make friends."
 }
 
 volroles = {
     "Event Coordinator": ["events", "coordinate", "organize", "volunteer"],
-    "Marketing": ["social media", "marketing", "sales", "advertising", "mechanic"],
+    "Marketing": ["social media", "marketing", "sales", "advertising"],
     "Audience Development": ["membership", "engagement", "community", "outreach", "retention"]
 }
 # 2) function to count keyword matches for each role
@@ -62,13 +63,14 @@ while running:
 
     # 9) display results or manual review message
     if top_three and top_three[0][0] > 0:
-        print("\033[1m Top role matches (Role : Keyword count): \033[0m")
+        print(f"\033[1m Top role matches for {name} (Role : Keyword count): \033[0m")
         print("")
         for pair in top_three:
             print("   ",pair[1], ":", pair[0])
             print("")
     else:
-        print("No good keyword matches found. Please review the bio manually.")
+        print(f"No good keyword matches found. Please review {name}'s bio manually.")
+        print("")
 
     # 10) Ask user whether to run again
     use_again = input("Analyze another volunteer? (y/n): ").lower()
