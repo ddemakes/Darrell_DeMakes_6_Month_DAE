@@ -1,0 +1,80 @@
+# 1) preload data
+volbios = {
+    "Alice": "I create events where I work.  I also lead volunteer activities for a local charity.  I do outreach and advertising for a different charity",
+    "Bob": "I organize social media for my pickleball league events and enjoy marketing. I have worked in sales and engagement.",
+    "Cara": "I work in retention and outreach for a non-profit.  I handle social media for their events."
+}
+
+volroles = {
+    "Event Coordinator": ["events", "coordinate", "organize", "volunteer"],
+    "Marketing": ["social media", "marketing", "sales", "advertising", "mechanic"],
+    "Audience Development": ["membership", "engagement", "community", "outreach", "retention"]
+}
+# 2) function to count keyword matches for each role
+def count_role_matches(bio_lower, roles):
+    """
+    Return a dict mapping each role -> integer count of keyword occurrences
+    in the already-lowercased biography string `bio_lower`.
+    """
+    counts = {}
+    for role in roles:
+        count = 0
+        keywords = roles[role]
+        for kw in keywords:
+            count = count + bio_lower.count(kw)
+        counts[role] = count
+    return counts
+
+# 3) main loop control
+running = True
+
+while running:
+    # 4) get name from user
+    print ("")
+    name = input("Enter volunteer's first name: ").strip()
+    print ("")
+
+    # 5) check if user is in the "database"
+    if name not in volbios:
+        print("Volunteer not found.")
+        print("")
+        again = input("Try another name? (y/n): ").lower()
+        if again != 'y':
+            print("Thank you for using the program.")
+            running = False
+        else:
+            # go back to start of while loop
+            continue
+
+    # 6) get biography and prepare for searching
+    bio = volbios[name]
+    bio_lower = bio.lower()
+
+    # 7) calls the function to count keyword matches for each role
+    counts = count_role_matches(bio_lower, volroles)
+
+    # 8) make sortable list and pick top 3
+    pairs = []
+    for role in counts:
+        pairs.append((counts[role], role))
+    pairs.sort(reverse=True)   # sorts by count descending because count is first item
+    top_three = pairs[:3]
+
+    # 9) display results or manual review message
+    if top_three and top_three[0][0] > 0:
+        print("\033[1m Top role matches (Role : Keyword count): \033[0m")
+        print("")
+        for pair in top_three:
+            print("   ",pair[1], ":", pair[0])
+            print("")
+    else:
+        print("No good keyword matches found. Please review the bio manually.")
+
+    # 10) Ask user whether to run again
+    use_again = input("Analyze another volunteer? (y/n): ").lower()
+    print("")
+    if use_again != 'y':
+        print("")
+        print("Thank you for using the program.")
+        print("")
+        running = False
