@@ -1,5 +1,3 @@
-# simple_volunteer_fit.py
-# Beginner-style script implementing the flowchart logic
 
 def preload_data():
     # small example database (name -> biography text)
