@@ -5,21 +5,6 @@ title: About
 
 # About Me
 
-## Professional Summary
-Dynamic Product Management leader with a proven track record of successful app and platform launches. Expert in uniting business, technical, and creative teams to exceed expectations. Skilled in leading cross-functional teams, managing timelines, and leveraging data insights.
+Darrell DeMakes is a dynamic Product Management leader with a proven track record of successful app and platform launches. He excels at uniting business, technical, and creative teams to exceed expectations. His expertise spans product strategy, cross-functional team leadership, AI workflows for Product Management, Agile & Scrum methodologies, market research & competitive analysis, user experience (UX) design, data-driven decision making, stakeholder management, budget & resource management, and innovative product launches.
 
-## Core Competencies
-- Product Strategy & Roadmap Development
-- Cross-Functional Team Leadership
-- AI workflows for Product Management
-- Agile & Scrum Methodologies
-- Market Research & Competitive Analysis
-- User Experience (UX) Design
-- Data-Driven Decision Making
-- Stakeholder Management
-- Budget & Resource Management
-- Innovative Product Launches
-
-## Education
-**University of Florida**
-Bachelor of Science in Media Production, Management, and Technology
+With a career that includes significant roles at World Wrestling Entertainment, The Walt Disney Company, and Nokia, Darrell has consistently delivered impactful digital products. He holds a Bachelor of Science in Media Production, Management, and Technology from the University of Florida, complemented by certifications in AI Prompt Writing & Chatbot Building and Product Management from General Assembly. His commitment to continuous learning and community engagement is further demonstrated by his role as a host for the Stamford AI Meetup.

@@ -5,26 +5,28 @@ title: Projects
 
 # My Projects
 
-This section highlights my project work, particularly focusing on the planning and initial phases from Semester 2 of my backend web development class. These documents showcase my approach to project management, design, and analysis.
+This section showcases various documents and projects from Semester 2 of my backend web development class. These items reflect my work in project planning, design, and analysis, as well as specific project deliverables.
 
-## Semester 2 Project Documents
+## Semester 2 Project Highlights
 
--   **[Monday Import Project Plan.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Monday%20Import%20Project%20Plan.pdf)**: This document outlines the overall plan for a project involving data import, likely related to project management or task tracking systems.
+Here are some key documents and artifacts from my second semester:
 
--   **[Monday Task Import File Draft 1.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Monday%20Task%20Import%20File%20Draft%201.pdf)**: A draft of a file format or specification for importing tasks, indicating attention to data structure and integration.
+-   **[Monday Import Project Plan.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Monday%20Import%20Project%20Plan.pdf)**: An overview of a project focused on data import processes, demonstrating planning and strategic thinking.
 
--   **[Project Design Document.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Project%20Design%20Document.pdf)**: A core design document detailing the architecture, components, and functionalities of a project.
+-   **[Monday Task Import File Draft 1.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Monday%20Task%20Import%20File%20Draft%201.pdf)**: A preliminary draft outlining the structure and requirements for importing tasks, highlighting attention to detail in data management.
 
--   **[Project Design Doc Work .pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Project%20Design%20Doc%20Work%20.pdf)**: Further iterations or specific work pertaining to the project design, demonstrating an iterative design process.
+-   **[Project Design Document.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Project%20Design%20Document.pdf)**: A comprehensive design document detailing the architectural and functional aspects of a project.
 
--   **[Project Monday Import.html](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Project%20Monday%20Import.html)**: An HTML file, possibly a web-based component or a report generated as part of the project, potentially related to the Monday.com platform.
+-   **[Project Design Doc Work .pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Project%20Design%20Doc%20Work%20.pdf)**: Further work and refinements on the project's design, illustrating an iterative development approach.
 
--   **[Incident_Response_Summary_Darrell_DeMakes.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Incident_Response_Summary_Darrell_DeMakes.pdf)**: This document likely summarizes an incident response scenario or plan, showcasing problem-solving and risk management skills.
+-   **[Project Monday Import.html](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Project%20Monday%20Import.html)**: An HTML output, possibly a report or a component of a larger web-based project, likely related to integration with the Monday.com platform.
 
--   **[Job Description - Tech Prod Mgr Role .pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Job%20Description%20-%20Tech%20Prod%20Mgr%20Role%20.pdf)**: A job description for a Technical Product Manager role, indicating research into career paths and responsibilities.
+-   **[Incident_Response_Summary_Darrell_DeMakes.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Incident_Response_Summary_Darrell_DeMakes.pdf)**: A summary document on incident response, demonstrating an understanding of system resilience and problem resolution.
 
--   **[Projects.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Projects.pdf)**: A general document outlining various projects or project ideas.
+-   **[Job Description - Tech Prod Mgr Role .pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Job%20Description%20-%20Tech%20Prod%20Mgr%20Role%20.pdf)**: Research into the responsibilities and expectations of a Technical Product Manager role, reflecting career planning and industry awareness.
 
--   **[Role and Project Discovery Prompts.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Role%20and%20Project%20Discovery%20Prompts.pdf)**: Prompts or guidelines used for discovering and defining project roles and scopes.
+-   **[Projects.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Projects.pdf)**: A general document potentially outlining various project ideas or a broader project portfolio.
 
--   **[Status Update 260312.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Status%20Update%20260312.pdf)**: A status update document, reflecting progress tracking and communication skills.
+-   **[Role and Project Discovery Prompts.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Role%20and%20Project%20Discovery%20Prompts.pdf)**: Prompts used to define roles and discover project scopes, showcasing methodology in project initiation.
+
+-   **[Status Update 260312.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Status%20Update%20260312.pdf)**: A status update document, indicative of effective project communication and progress tracking.
