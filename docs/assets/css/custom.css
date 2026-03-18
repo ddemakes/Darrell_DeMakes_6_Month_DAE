@@ -1,0 +1,17 @@
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-height: 80px;
+}
+
+.page-header nav {
+  margin-top: 1rem;
+}
+
+.page-header nav a.btn {
+  margin-right: 5px;
+}

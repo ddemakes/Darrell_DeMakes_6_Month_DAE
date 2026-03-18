@@ -3,30 +3,35 @@ layout: default
 title: Projects
 ---
 
-# My Projects
+## StreamOps Agent — LLM-powered assistant for streaming TPM workflows
 
-This section showcases various documents and projects from Semester 2 of my backend web development class. These items reflect my work in project planning, design, and analysis, as well as specific project deliverables.
+This project is a MERN-stack prototype that ingests simulated streaming telemetry and connects to a retrieval-augmented LLM agent. The agent detects anomalies, drafts incident post-mortems, generates GitHub issues with acceptance criteria, and produces OpenAPI skeletons from plain-English requirements.
 
-## Semester 2 Project Highlights
+### Goals and Objectives
 
-Here are some key documents and artifacts from my second semester:
+*   **Goal 1:** Implement a telemetry ingestion and KPI aggregation pipeline (startup time, p95 rebuffering, CDN errors) and surface these KPIs in a web dashboard.
+*   **Goal 2:** Build an agent using LangChain that uses Retrieval-Augmented Generation (RAG) to draft incident post-mortems and convert plain-English requests into OpenAPI skeletons and GitHub issue payloads.
+*   **Goal 3:** Deliver deployable artifacts, including a GitHub repo, a deployed demo, Postman/OpenAPI files, runbook templates, and a 5–7 minute demo video.
 
--   **[Monday Import Project Plan.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Monday%20Import%20Project%20Plan.pdf)**: An overview of a project focused on data import processes, demonstrating planning and strategic thinking.
+### Key Features
 
--   **[Monday Task Import File Draft 1.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Monday%20Task%20Import%20File%20Draft%201.pdf)**: A preliminary draft outlining the structure and requirements for importing tasks, highlighting attention to detail in data management.
+*   Telemetry ingestion API to collect and store simulated streaming events.
+*   KPI aggregator job to compute and expose metrics like median, p95, and error rates.
+*   React dashboard to visualize KPIs and surface anomaly alerts.
+*   Agent endpoints to summarize anomalies, auto-draft post-mortems, generate OpenAPI skeletons, and create GitHub issue payloads.
+*   RAG capability using Chroma and vector embeddings for contextual recommendations.
 
--   **[Project Design Document.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Project%20Design%20Document.pdf)**: A comprehensive design document detailing the architectural and functional aspects of a project.
+### Tech Stack
 
--   **[Project Design Doc Work .pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Project%20Design%20Doc%20Work%20.pdf)**: Further work and refinements on the project's design, illustrating an iterative development approach.
+*   **Languages/Frameworks:** Node.js (Express), React (Vite)
+*   **Datastore:** MongoDB Atlas
+*   **RAG/Embeddings:** Chroma, OpenAI/Hugging Face embeddings
+*   **Agent Orchestration:** LangChain.js
+*   **LLM Provider:** OpenAI (GPT-4) or Hugging Face
+*   **DevOps/Hosting:** GitHub, Vercel, Render, Docker
 
--   **[Project Monday Import.html](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Project%20Monday%20Import.html)**: An HTML output, possibly a report or a component of a larger web-based project, likely related to integration with the Monday.com platform.
+---
 
--   **[Incident_Response_Summary_Darrell_DeMakes.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Incident_Response_Summary_Darrell_DeMakes.pdf)**: A summary document on incident response, demonstrating an understanding of system resilience and problem resolution.
+## Previous Python Project
 
--   **[Job Description - Tech Prod Mgr Role .pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Job%20Description%20-%20Tech%20Prod%20Mgr%20Role%20.pdf)**: Research into the responsibilities and expectations of a Technical Product Manager role, reflecting career planning and industry awareness.
-
--   **[Projects.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Projects.pdf)**: A general document potentially outlining various project ideas or a broader project portfolio.
-
--   **[Role and Project Discovery Prompts.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Role%20and%20Project%20Discovery%20Prompts.pdf)**: Prompts used to define roles and discover project scopes, showcasing methodology in project initiation.
-
--   **[Status Update 260312.pdf](file:///Users/darrell/Desktop/DD-6-Month-DAE/Semester_2/Status%20Update%20260312.pdf)**: A status update document, indicative of effective project communication and progress tracking.
+Details about this project will be added soon.

@@ -1,10 +1,16 @@
 ---
 layout: default
-title: About
+title: About Me
 ---
 
-# About Me
+## About Me
 
-Darrell DeMakes is a dynamic Product Management leader with a proven track record of successful app and platform launches. He excels at uniting business, technical, and creative teams to exceed expectations. His expertise spans product strategy, cross-functional team leadership, AI workflows for Product Management, Agile & Scrum methodologies, market research & competitive analysis, user experience (UX) design, data-driven decision making, stakeholder management, budget & resource management, and innovative product launches.
+I am an aspiring Associate Technical Product Manager for streaming platforms, focused on translating product goals into implementable backend tasks. My expertise lies in specifying feature requirements, tracking metrics, and coordinating with engineering and QA for playback, ABR, DRM, and device work.
 
-With a career that includes significant roles at World Wrestling Entertainment, The Walt Disney Company, and Nokia, Darrell has consistently delivered impactful digital products. He holds a Bachelor of Science in Media Production, Management, and Technology from the University of Florida, complemented by certifications in AI Prompt Writing & Chatbot Building and Product Management from General Assembly. His commitment to continuous learning and community engagement is further demonstrated by his role as a host for the Stamford AI Meetup.
+### Core Competencies
+
+*   **Product & Collaboration:** Proficient in writing clear product requirements and acceptance criteria, managing sprint backlogs using Jira, and validating API responses with Postman.
+*   **Technical Familiarity:** Foundational knowledge of Node.js, Python, and SQL, enabling effective communication with engineering teams and basic troubleshooting.
+*   **Observability & Analytics:** Experienced in using tools like Datadog and Grafana to monitor streaming telemetry, report on key metrics, and derive actionable insights.
+*   **Media-Specific Concepts:** Solid understanding of HLS/DASH, CDN behavior, and transcoding pipelines.
+*   **Stakeholder Communication:** Strong skills in writing concise acceptance criteria, aligning engineering and content teams, and making tradeoffs visible to stakeholders.

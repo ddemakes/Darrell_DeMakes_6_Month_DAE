@@ -1,13 +1,12 @@
---- 
-layout: default 
-title: Darrell DeMakes Portfolio 
---- 
+---
+layout: default
+title: Home
+---
 
-# {{ site.title }} 
+![Darrell DeMakes Headshot]({{ '/assets/images/Headshot.jpg' | relative_url }}){: style="width:200px;border-radius:50%;margin-bottom:20px;"}
 
-<img src="{{ "/assets/images/Headshot.jpg" | relative_url }}" alt="Darrell DeMakes Headshot" style="width:200px;border-radius:50%;margin-bottom:20px;"> 
-<img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Logo" style="width:100px;margin-bottom:20px;"> 
+## Welcome to my Portfolio
 
-{{ site.description }} 
+This is the portfolio of Darrell DeMakes. It showcases my journey through a six-month backend web development class, my projects, and my resume.
 
-Welcome to my portfolio! Here you can find information about my journey through a six-month backend web development class, my projects, resume, and how to contact me. Use the navigation above to explore.
+More details about the projects will be provided soon.
