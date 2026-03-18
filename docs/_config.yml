@@ -2,8 +2,10 @@ title: Darrell DeMakes Portfolio
 description: My DAE 6 Month Journey
 show_downloads: true
 google_analytics:
-theme: jekyll-theme-tactile
+remote_theme: pages-themes/tactile@v0.2.0
 baseurl: /DD-6-Month-DAE
+plugins:
+  - jekyll-remote-theme
 
 collections:
   pages:
