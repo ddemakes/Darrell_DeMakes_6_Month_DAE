@@ -3,3 +3,32 @@ description: My DAE 6 Month Journey - using TRAE
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-tactile
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Navigation links
+nav:
+  - name: Home
+    url: /
+  - name: About
+    url: /about/
+  - name: Resume
+    url: /resume/
+  - name: Projects
+    url: /projects/
+  - name: Contact
+    url: /contact/
