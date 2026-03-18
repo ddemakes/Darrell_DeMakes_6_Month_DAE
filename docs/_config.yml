@@ -3,6 +3,7 @@ description: My DAE 6 Month Journey
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-tactile
+baseurl: /DD-6-Month-DAE
 
 collections:
   pages:
