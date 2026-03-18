@@ -1,9 +1,12 @@
 ---
 layout: default
-title: Home
+title: Darrell DeMakes Portfolio
 ---
 
 # {{ site.title }}
+
+<img src="/assets/images/Headshot.jpg" alt="Darrell DeMakes Headshot" style="width:200px;border-radius:50%;margin-bottom:20px;">
+<img src="/assets/images/logo.png" alt="Logo" style="width:100px;margin-bottom:20px;">
 
 {{ site.description }}
 
