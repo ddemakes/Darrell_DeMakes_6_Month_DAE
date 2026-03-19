@@ -7,7 +7,10 @@ title: Home
 
 
 | Test | Test 2 | Test 3 |
-|a;lsdjf;lasdjflas;djf| 2 | ;lasdjf;lasdjflasjd;f|
+| --------------------| --| ---------------------|
+|a;lsdjf;lasdjflas;djf| [2,http://usps.com] | ;lasdjf;lasdjflasjd;f|
+
+[Label](url.com "Tooltip")
 
 This is the homepage of my professional portfolio. Please navigate through the links above to learn more about me, my work, and how to get in touch.
 
