@@ -1,0 +1,87 @@
+﻿3/9/26, 1:07 PM	Media Product Roles with Tech
+
+1.Job Title and Summary
+
+What is the role called?
+Associate Technical Product Manager — Streaming (Entry Level). This title signals a product-first role with a technical mentorship path toward a full Technical Product Manager.
+Summary:
+The Associate TPM supports the streaming product team by specifying feature requirements, tracking metrics, and coordinating engineering and QA for playback, ABR, DRM, and device work. It exists to translate product goals into implementable backend tasks while the hire gains hands-on familiarity with media pipelines and operational telemetry.
+
+2.Responsibilities
+
+Help write clear product requirements and acceptance criteria for playback and ingest features.
+Work with senior PMs and engineers to convert product needs (e.g., lower rebuffer rate) into API/manifest specs and testable acceptance criteria.
+Manage tickets and the sprint backlog for small feature slices.
+Triage bugs, create user stories, and ensure tasks have the required context, mockups, and test cases so engineers can move quickly.
+Monitor basic streaming telemetry and report on key metrics.
+Pull startup time, rebuffering, and CDN error rates from dashboards and produce short summaries that highlight regressions or improvement opportunities.
+Coordinate cross-functional QA and device certification tasks for releases.
+Own test-checklists, device test results, and the rollout schedule so releases meet platform and DRM requirements.
+Assist in investigating incidents and creating post-mortems.
+Gather logs, timeline events, and stakeholder notes; help document root causes and recommended follow-ups.
+Support partner & platform onboarding activities (SDK/device checks).
+Help run integration tests, validate API responses, and maintain simple onboarding documentation for partners.
+Learn and document media pipeline basics (transcoding, manifests, CDN behavior). Maintain a personal and team “cheat sheet” that maps backend components to product outcomes to accelerate technical fluency.
+
+3.Required Skills and Tools
+
+Foundational backend familiarity (Node/Python basics, SQL).
+Able to read short code snippets and run simple queries to verify data; this supports meaningful conversations with engineers and basic troubleshooting.
+Product & collaboration tools (Jira, GitHub, Postman).
+Comfortable creating/triaging issues in Jira, reading PR titles in GitHub, and using Postman to validate API responses.
+Observability & analytics (Datadog/Grafana, basic SQL for metrics).
+Able to read dashboards, set a simple alert, and run a SQL query to pull a metric for a team update.
+Media-specific concepts (HLS/DASH basics, CDN, transcode pipeline awareness). Understands what a manifest is, why transcoding profiles matter, and the role CDNs play in playback quality.
+
+
+https://chatgpt.com/c/69aee721-db58-8328-88e7-4ae3f15a0825	1/2
+3/9/26, 1:07 PM	Media Product Roles with Tech
+Soft skills: clear written specs, stakeholder communication, prioritization.
+Strong at writing concise acceptance criteria, aligning engineers and content teams, and making tradeoffs visible to stakeholders.
+
+4.Sample Deliverables
+
+User story + acceptance criteria for an ABR improvement spike.
+A one-page ticket that describes the problem, success metrics, test cases, and rollout steps.
+Release checklist & runbook for a small playback feature.
+A document listing device tests, DRM validation steps, monitoring queries, and rollback instructions.
+Monitoring snapshot and short analysis note on rebuffering trends.
+A dashboard screenshot with a 1–2 paragraph interpretation and recommended next actions.
+API smoke test collection (Postman) for ingest or playback endpoints.
+A runnable collection that QA and partners can use to validate integrations.
+Incident timeline and draft post-mortem for a playback outage.
+A factual timeline, impact summary, and 2–3 remediation actions for the engineering team.
+
+5.Ideal Work Environment
+
+Company type:
+Best at mid-sized streaming teams, video-platform companies, or the streaming/product teams inside larger media companies where you can learn from senior TPMs and SREs.
+Work style:
+Team-based with structured processes (sprints, defined QA gates) and regular pairing with senior PMs and engineers to accelerate learning and impact.
+
+6.Growth Style and Rigor
+
+Pace and intensity:
+Moderately fast — cadence is sprint-driven with occasional high-pressure windows around major releases or peak events, but most work is predictable and milestone-based.
+Mentorship and advancement:
+Strong mentorship: expect frequent reviews, pairing on technical topics, and a clear path (Associate TPM → Technical PM) that rewards mastering backend concepts, driving small releases, and improving operational metrics.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://chatgpt.com/c/69aee721-db58-8328-88e7-4ae3f15a0825	2/2
