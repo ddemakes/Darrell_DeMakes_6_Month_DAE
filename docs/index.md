@@ -1,123 +1,34 @@
 ---
 layout: default
+title: Home
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## Welcome to My Portfolio
 
-[Link to another page](./another-page.html).
+This is the homepage of my professional portfolio. Please navigate through the links above to learn more about me, my work, and how to get in touch.
 
-There should be whitespace between paragraphs.
+I'm excited to share my journey in web development and my passion for creating engaging digital experiences.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+### Project: Associate Technical Product Manager — Streaming
 
-# Header 1
+This role focuses on supporting a streaming product team by defining feature requirements, tracking metrics, and coordinating engineering and QA efforts for playback, ABR, DRM, and device functionalities. The goal is to translate product objectives into actionable backend tasks, while gaining practical experience with media pipelines and operational telemetry.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+#### Responsibilities include:
+- Writing clear product requirements and acceptance criteria for playback and ingest features.
+- Managing tickets and sprint backlogs, triaging bugs, and creating user stories.
+- Monitoring streaming telemetry and reporting on key metrics like startup time, rebuffering, and CDN error rates.
+- Coordinating cross-functional QA and device certification for releases.
+- Assisting in incident investigation and post-mortem creation.
+- Supporting partner and platform onboarding activities.
+- Learning and documenting media pipeline basics.
 
-## Header 2
+#### Required Skills:
+- Foundational backend familiarity (Node/Python, SQL).
+- Proficiency with product and collaboration tools (Jira, GitHub, Postman).
+- Experience with observability and analytics tools (Datadog/Grafana).
+- Understanding of media-specific concepts (HLS/DASH, CDN, transcode pipelines).
+- Strong soft skills in communication, prioritization, and writing clear specifications.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+<div class="logo-container">
+    <img src="assets/img/logo.png" alt="DAE Logo" style="max-width: 150px; margin-top: 20px;">
+</div>

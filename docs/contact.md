@@ -3,11 +3,13 @@ layout: default
 title: Contact
 ---
 
-## Contact Me
+## Get in Touch
 
-You can reach me at:
+I'm always open to new opportunities and collaborations. Feel free to reach out through any of the channels below:
 
-- **Email**: [darrell.demakes@gmail.com](mailto:darrell.demakes@gmail.com)
-- **LinkedIn**: [https://www.linkedin.com/in/ddemakes](https://www.linkedin.com/in/ddemakes)
-- **GitHub**: [https://github.com/ddemakes](https://github.com/ddemakes)
-- **Portfolio**: [https://ddemakes.github.io/DD-6-Month-DAE/](https://ddemakes.github.io/DD-6-Month-DAE/)
+- **LinkedIn:** [linkedin.com/in/ddemakes](https://www.linkedin.com/in/ddemakes)
+- **Email:** [darrell.demakes@gmail.com](mailto:darrell.demakes@gmail.com)
+- **Phone:** 203-550-2515
+- **Location:** Stamford, CT
+
+I look forward to connecting with you!
