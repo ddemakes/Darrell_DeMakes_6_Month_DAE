@@ -5,7 +5,7 @@ title: About Me
 
 ## About Me
 
-I am an aspiring Associate Technical Product Manager for streaming platforms, focused on translating product goals into implementable backend tasks. My expertise lies in specifying feature requirements, tracking metrics, and coordinating with engineering and QA for playback, ABR, DRM, and device work.
+I am an aspiring Technical Product Manager for streaming platforms, focused on translating product goals into implementable backend tasks. My expertise lies in specifying feature requirements, tracking metrics, and coordinating with engineering and QA for playback, ABR, DRM, and device work.
 
 ### Core Competencies
 
