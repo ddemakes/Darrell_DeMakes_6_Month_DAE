@@ -5,6 +5,10 @@ title: Home
 
 ## Welcome to My Portfolio
 
+
+| Test | Test 2 | Test 3 |
+|a;lsdjf;lasdjflas;djf| 2 | ;lasdjf;lasdjflasjd;f|
+
 This is the homepage of my professional portfolio. Please navigate through the links above to learn more about me, my work, and how to get in touch.
 
 I'm excited to share my journey in web development and my passion for creating engaging digital experiences.
