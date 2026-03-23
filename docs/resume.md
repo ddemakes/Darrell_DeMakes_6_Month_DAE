@@ -1,13 +1,8 @@
----
-layout: default
-title: Resume
----
-
 # Darrell DeMakes
 
-**linkedin:** [https://www.linkedin.com/in/ddemakes](https://www.linkedin.com/in/ddemakes)
-**email:** [darrell.demakes@gmail.com](mailto:darrell.demakes@gmail.com)
-**phone:** 203-550-2515
+**linkedin:** https://www.linkedin.com/in/ddemakes  
+**email:** darrell.demakes@gmail.com  
+**phone:** 203-550-2515  
 **location:** Stamford, CT
 
 ---
@@ -86,20 +81,20 @@ Dynamic Product Management leader with a proven track record of successful app a
 ---
 
 ## Membership
-- Host: Stamford AI Meetup — 2024–Present
-- Host: Stamford Tech Meetup — 2013–2018
-- Member: PTA Technology Representative — Greenwich Public Schools — 2013–2014
+- Host: Stamford AI Meetup — 2024–Present  
+- Host: Stamford Tech Meetup — 2013–2018  
+- Member: PTA Technology Representative — Greenwich Public Schools — 2013–2014  
 - Membership Chair: Emmy Advance Media Committee — 2004–2006
 
 ---
 
 ## Training
-- Certification: AI Prompt Writing & Chatbot Building — Section Online — July 2024
-- Certification: General Assembly — Product Management — 2016
+- Certification: AI Prompt Writing & Chatbot Building — Section Online — July 2024  
+- Certification: General Assembly — Product Management — 2016  
 - Certification: Mediabistro — Digital Marketing and Social Media Metrics — 2013
 
 ---
 
 ## Education
-**University of Florida**
+**University of Florida**  
 Bachelor of Science in Media Production, Management, and Technology
