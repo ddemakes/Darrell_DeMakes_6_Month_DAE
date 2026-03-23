@@ -13,10 +13,8 @@ volroles = {
 }
 # 2) function to count keyword matches for each role
 def count_role_matches(bio_lower, roles):
-    """
-    Return a dict mapping each role -> integer count of keyword occurrences
-    in the already-lowercased biography string `bio_lower`.
-    """
+    #    Return a dict mapping each role -> integer count of keyword occurrences in the already-lowercased biography string `bio_lower`.
+
     counts = {}
     for role in roles:
         count = 0

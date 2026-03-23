@@ -1,22 +1,16 @@
 ---
 layout: default
-title: Home
+title: Darrell DeMakes Professional Portfolio
 ---
 
-## Welcome to My Portfolio
+## Welcome
 
-
-| Test | Test 2 | Test 3 |
-| --------------------| --| ---------------------|
-|a;lsdjf;lasdjflas;djf| [2,http://usps.com] | ;lasdjf;lasdjflasjd;f|
-
-[Label](url.com "Tooltip")
 
 This is the homepage of my professional portfolio. Please navigate through the links above to learn more about me, my work, and how to get in touch.
 
 I'm excited to share my journey in web development and my passion for creating engaging digital experiences.
 
-### Project: Associate Technical Product Manager — Streaming
+### Role: Associate Technical Product Manager
 
 This role focuses on supporting a streaming product team by defining feature requirements, tracking metrics, and coordinating engineering and QA efforts for playback, ABR, DRM, and device functionalities. The goal is to translate product objectives into actionable backend tasks, while gaining practical experience with media pipelines and operational telemetry.
 
