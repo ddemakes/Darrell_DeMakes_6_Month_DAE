@@ -1,5 +1,12 @@
-title: Cayman theme
-description: Cayman is a clean, responsive theme for GitHub Pages.
+title: Yessy's Professional Portfolio
+description: A personal portfolio showcasing my projects and skills.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
+
+header_pages:
+  - index.md
+  - projects.md
+  - resume.md
+  - about.md
+  - contact.md

@@ -1,15 +1,17 @@
----
+--- 
 layout: default
 title: Contact
 ---
 
+# Contact Me
+
+I'd love to hear from you!
+
 ## Get in Touch
 
-I'm always open to new opportunities and collaborations. Feel free to reach out through any of the channels below:
+*   **Email**: [yessy.example@email.com](mailto:yessy.example@email.com)
+*   **LinkedIn**: [Yessy's LinkedIn Profile](https://www.linkedin.com/in/yessy)
+*   **GitHub**: [Yessy's GitHub Profile](https://github.com/yessyvasquez632-gif)
+*   **GitHub Pages**: [Yessy's GitHub Pages Portfolio](https://yessyvasquez632-gif.github.io/Yessy-s-dae-project/)
 
-- **LinkedIn:** [linkedin.com/in/ddemakes](https://www.linkedin.com/in/ddemakes)
-- **Email:** [darrell.demakes@gmail.com](mailto:darrell.demakes@gmail.com)
-- **Phone:** 203-550-2515
-- **Location:** Stamford, CT
-
-I look forward to connecting with you!
+Feel free to reach out for collaborations, questions, or just to say hello!

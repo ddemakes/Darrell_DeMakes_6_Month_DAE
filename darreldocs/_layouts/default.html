@@ -16,20 +16,14 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-      <img src="{{ site.baseurl }}/assets/img/logo.png" alt="Logo" style="max-height: 80px; float: right; margin-left: 20px;">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <nav>
-        <a href="{{ site.baseurl }}/" class="btn">Home</a>
-        <a href="{{ site.baseurl }}/about" class="btn">About Me</a>
-        <a href="{{ site.baseurl }}/projects" class="btn">Projects</a>
-        <a href="{{ site.baseurl }}/resume" class="btn">Resume</a>
-        <a href="{{ site.baseurl }}/contact" class="btn">Contact</a>
-      </nav>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-        <a href="#" class="btn">View on LinkedIn</a>
-        <a href="{{ site.baseurl }}/YESSY_RESUME.pdf" class="btn" download>Download Resume</a>
+      {% endif %}
+      {% if site.show_downloads %}
+        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
     </header>
 
