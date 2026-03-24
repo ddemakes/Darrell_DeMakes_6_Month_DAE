@@ -12,11 +12,11 @@
   <body>
     <div class="page-header" role="banner">
 
-      <div style="display:flex; align-items:center; justify-content:center; gap:2.5rem;">
+      <div style="display:flex; align-items:center; justify-content:center; gap:1.75rem;">
         <h1 class="project-name" style="margin:0;">{{ site.title | default: site.github.repository_name }}</h1>
         {% if site.logo %}
-        <div class="logo-container">
-          <img src="{{ site.logo | relative_url }}" alt="Logo" style="max-width:80px;">
+        <div class="logo-container" style="background:rgba(255,255,255,0.17); border-radius:50%; padding:8px 14px; display:flex; align-items:center; justify-content:center;">
+          <img src="{{ site.logo | relative_url }}" alt="Logo" style="max-width:80px; display:block;">
         </div>
         {% endif %}
       </div>
