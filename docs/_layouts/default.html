@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
   </head>
-  <body{% if page.url == "/" or page.url == "/index.html" %} class="page-home"{% endif %}>
+  <body>
     <div class="page-header" role="banner">
 
       <div style="display:flex; align-items:center; justify-content:space-between; width:100%;">
@@ -26,29 +26,22 @@
         {% endif %}
       </div>
 
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-      {% endif %}
-
-      {% if site.linkedin_username %}
-        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" class="btn" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
-      {% endif %}
-
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download Resume</a>
-      {% endif %}
-
-      {% if site.header_pages %}
       <nav>
-        {% for node in site.header_pages %}
-          {% assign page_path = node %}
-          {% assign my_page = site.pages | where: "path", page_path | first %}
-          {% if my_page.title %}
-            <a href="{{ my_page.url | relative_url }}" class="btn">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
+        <a href="{{ "/" | relative_url }}" class="btn">Home</a>
+        <a href="{{ "/about.html" | relative_url }}" class="btn">About</a>
+        <a href="{{ "/projects.html" | relative_url }}" class="btn">Projects</a>
+        <a href="{{ "/resume.html" | relative_url }}" class="btn">Resume</a>
+        <a href="{{ "/contact.html" | relative_url }}" class="btn">Contact</a>
       </nav>
-      {% endif %}
+
+      <div style="margin-top: 0.4rem;">
+        {% if site.github.is_project_page %}
+          <a href="{{ site.github.repository_url }}" class="btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        {% endif %}
+        {% if site.linkedin_username %}
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" class="btn" target="_blank" rel="noopener noreferrer">View on LinkedIn</a>
+        {% endif %}
+      </div>
 
     </div>
 

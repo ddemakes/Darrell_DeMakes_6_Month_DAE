@@ -20,8 +20,4 @@
   margin-top: 8px !important;
 }
 
-/* Suppress Home nav link on homepage only */
-body.page-home .site-nav a[href="/Darrell_DeMakes_6_Month_DAE/"],
-body.page-home .site-nav a[href="/"] {
-  display: none !important;
-}
+
