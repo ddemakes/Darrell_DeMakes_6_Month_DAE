@@ -12,14 +12,16 @@
   <body>
     <div class="page-header" role="banner">
 
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      <div style="display:flex; align-items:center; justify-content:center; gap:1rem;">
+        <h1 class="project-name" style="margin:0;">{{ site.title | default: site.github.repository_name }}</h1>
+        {% if site.logo %}
+        <div class="logo-container">
+          <img src="{{ site.logo | relative_url }}" alt="Logo" style="max-width:60px;">
+        </div>
+        {% endif %}
+      </div>
       {% if site.description %}
       <h2 class="project-tagline">{{ site.description }}</h2>
-      {% endif %}
-      {% if site.logo %}
-      <div class="logo-container">
-        <img src="{{ site.logo | relative_url }}" alt="Logo" style="max-width:60px;">
-      </div>
       {% endif %}
 
       <nav>
