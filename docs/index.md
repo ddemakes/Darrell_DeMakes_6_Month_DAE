@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Darrell DeMakes Professional Portfolio
+Graduating July 16, 2026
 ---
 
 ## Welcome
