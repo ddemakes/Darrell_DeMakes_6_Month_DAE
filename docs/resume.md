@@ -1,4 +1,4 @@
-## Professional Summary
+## Summary
 Dynamic Product Management leader with a proven track record of successful app and platform launches. Expert in uniting business, technical, and creative teams to exceed expectations. Skilled in leading cross-functional teams, managing timelines, and leveraging data insights.
 
 ---
