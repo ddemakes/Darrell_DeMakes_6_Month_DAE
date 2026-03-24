@@ -1,16 +1,16 @@
 ---
 layout: default
 title: Darrell DeMakes Professional Portfolio
-Graduating July 16, 2026
+
 ---
 
 ## Welcome
 
 <div style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 1.5rem;">
-  <img src="assets/img/Headshot.png" alt="Darrell DeMakes" style="width: 180px; border-radius: 8px; flex-shrink: 0;">
+  <img src="assets/img/headshot.png" alt="Darrell DeMakes" style="width: 180px; border-radius: 8px; flex-shrink: 0;">
   <div>
     <p>This is the homepage of my professional portfolio. Please navigate through the links above to learn more about me, my work, and how to get in touch.</p>
-    <p>I'm excited to share my journey in web development and my passion for creating engaging digital experiences.</p>
+    <p>I'm excited to share my journey in web development and my passion for creating engaging digital experiences. I graduate July 16, 2026.</p>
   </div>
 </div>
 

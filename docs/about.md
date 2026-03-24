@@ -5,7 +5,7 @@ title: About
 
 ## About Me
 
-<img src="assets/img/Headshot.png" alt="Darrell DeMakes" style="float: left; width: 180px; border-radius: 8px; margin: 0 1.5rem 1rem 0;">
+<img src="assets/img/headshot.png" alt="Darrell DeMakes" style="float: left; width: 180px; border-radius: 8px; margin: 0 1.5rem 1rem 0;">
 
 Hello! I'm Darrell DeMakes, a passionate and dynamic individual with a knack for bringing ideas to life. My journey has led me through various exciting roles, always with a focus on uniting diverse teams to create impactful digital experiences. I thrive on leading projects from conception to successful launch, constantly learning and adapting to new challenges.
 
