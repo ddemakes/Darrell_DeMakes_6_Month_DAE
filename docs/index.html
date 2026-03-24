@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darrell DeMakes — Product Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream: #f7f4ef;
+      --ink: #1a1814;
+      --ink-light: #4a4640;
+      --ink-muted: #8a8480;
+      --accent: #2c5f8a;
+      --accent-light: #e8f0f7;
+      --rule: #d8d4ce;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      font-size: 15px;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 3rem;
+      background: rgba(247, 244, 239, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      height: 36px;
+      width: auto;
+    }
+
+    .nav-name {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: var(--ink);
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    .nav-cta {
+      background: var(--ink) !important;
+      color: var(--cream) !important;
+      padding: 0.45rem 1.1rem !important;
+      border-radius: 2px !important;
+      letter-spacing: 0.08em !important;
+      transition: background 0.2s !important;
+    }
+
+    .nav-cta:hover { background: var(--accent) !important; color: #fff !important; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 80px;
+    }
+
+    .hero-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 4rem 5rem 3rem;
+      border-right: 1px solid var(--rule);
+    }
+
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-name {
+      font-family: var(--serif);
+      font-size: clamp(3rem, 5vw, 5rem);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-name em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--ink-muted);
+      margin-bottom: 2rem;
+    }
+
+    .hero-summary {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--ink-light);
+      max-width: 420px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      background: var(--ink);
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover { background: var(--accent); }
+
+    .btn-outline {
+      display: inline-block;
+      padding: 0.7rem 1.6rem;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: all 0.2s;
+    }
+
+    .btn-outline:hover { background: var(--ink); color: var(--cream); }
+
+    .hero-right {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 3rem;
+      overflow: hidden;
+    }
+
+    .hero-bg-text {
+      position: absolute;
+      font-family: var(--serif);
+      font-size: 18vw;
+      font-weight: 300;
+      color: rgba(44, 95, 138, 0.05);
+      letter-spacing: -0.05em;
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    .hero-photo-wrap {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-photo-wrap::before {
+      content: '';
+      position: absolute;
+      top: 20px; left: 20px;
+      right: -20px; bottom: -20px;
+      border: 1px solid var(--accent);
+      border-radius: 2px;
+      z-index: -1;
+    }
+
+    .hero-photo {
+      width: 320px;
+      height: 380px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      border-radius: 2px;
+      filter: grayscale(15%);
+    }
+
+    .hero-stats {
+      position: absolute;
+      bottom: 3rem;
+      left: 3rem;
+      display: flex;
+      gap: 2.5rem;
+    }
+
+    .stat-item { text-align: left; }
+
+    .stat-number {
+      font-family: var(--serif);
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-top: 0.2rem;
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      padding: 6rem 3rem;
+    }
+
+    .section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 1.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-number {
+      font-family: var(--serif);
+      font-size: 0.9rem;
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--ink);
+    }
+
+    .section-rule {
+      flex: 1;
+      height: 1px;
+      background: var(--rule);
+    }
+
+    /* ── ABOUT ── */
+    #about {
+      background: #fff;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .about-left { position: sticky; top: 120px; }
+
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 2px;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-links { display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .about-link {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.2s;
+    }
+
+    .about-link:hover { gap: 0.7rem; }
+    .about-link::before { content: '→'; }
+
+    .about-text p {
+      font-size: 1rem;
+      line-height: 1.85;
+      color: var(--ink-light);
+      margin-bottom: 1.5rem;
+    }
+
+    .competencies {
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem 2rem;
+    }
+
+    .competency-item {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .competency-item::before {
+      content: '';
+      width: 4px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── EXPERIENCE ── */
+    #experience { background: var(--cream); }
+
+    .experience-list { display: flex; flex-direction: column; gap: 0; }
+
+    .exp-item {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 3rem;
+      padding: 2.5rem 0;
+      border-bottom: 1px solid var(--rule);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .exp-item.visible { opacity: 1; transform: none; }
+
+    .exp-meta {}
+
+    .exp-period {
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      color: var(--ink-muted);
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+
+    .exp-company {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1.3;
+    }
+
+    .exp-content {}
+
+    .exp-role {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .exp-bullets li {
+      font-size: 0.9rem;
+      color: var(--ink-light);
+      padding-left: 1rem;
+      position: relative;
+      line-height: 1.65;
+    }
+
+    .exp-bullets li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: var(--ink-muted);
+    }
+
+    .exp-sub { margin-top: 1.25rem; }
+
+    .exp-sub-title {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 0.5rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    /* ── PROJECTS ── */
+    #projects {
+      background: var(--ink);
+      color: var(--cream);
+    }
+
+    #projects .section-title { color: var(--cream); }
+    #projects .section-number { color: #7aadcc; }
+    #projects .section-rule { background: rgba(255,255,255,0.15); }
+
+    .project-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      padding: 2.5rem;
+    }
+
+    .project-tag {
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #7aadcc;
+      margin-bottom: 1rem;
+    }
+
+    .project-title {
+      font-family: var(--serif);
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--cream);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .project-desc {
+      font-size: 0.9rem;
+      color: rgba(247,244,239,0.65);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      max-width: 600px;
+    }
+
+    .project-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .project-col-title {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #7aadcc;
+      margin-bottom: 1rem;
+    }
+
+    .project-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .project-list li {
+      font-size: 0.88rem;
+      color: rgba(247,244,239,0.7);
+      padding-left: 1rem;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .project-list li::before {
+      content: '–';
+      position: absolute;
+      left: 0;
+      color: rgba(122,173,204,0.6);
+    }
+
+    /* ── MEMBERSHIP / TRAINING ── */
+    #more {
+      background: #fff;
+      border-top: 1px solid var(--rule);
+    }
+
+    .more-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .more-col-title {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    .more-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .more-list li {
+      font-size: 0.88rem;
+      color: var(--ink-light);
+      line-height: 1.55;
+      padding-left: 0.75rem;
+      border-left: 2px solid var(--rule);
+    }
+
+    .more-list li strong {
+      display: block;
+      font-weight: 500;
+      color: var(--ink);
+      font-size: 0.82rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* ── CONTACT / FOOTER ── */
+    #contact {
+      background: var(--cream);
+      border-top: 1px solid var(--rule);
+      text-align: center;
+      padding: 5rem 3rem;
+    }
+
+    .contact-inner { max-width: 560px; margin: 0 auto; }
+
+    .contact-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .contact-headline {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-sub {
+      font-size: 0.9rem;
+      color: var(--ink-muted);
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      padding: 1.5rem 3rem;
+      border-top: 1px solid var(--rule);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .footer-logo img { height: 28px; }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-left > * {
+      opacity: 0;
+      animation: fadeUp 0.7s forwards;
+    }
+
+    .hero-eyebrow  { animation-delay: 0.1s; }
+    .hero-name     { animation-delay: 0.25s; }
+    .hero-title    { animation-delay: 0.35s; }
+    .hero-summary  { animation-delay: 0.45s; }
+    .hero-actions  { animation-delay: 0.55s; }
+
+    .hero-photo-wrap {
+      opacity: 0;
+      animation: fadeUp 0.9s 0.4s forwards;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links { gap: 1.25rem; }
+
+      #hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 4rem 1.5rem 2rem; border-right: none; }
+      .hero-right { display: none; }
+
+      section { padding: 4rem 1.5rem; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-left { position: static; }
+      .about-photo { max-width: 200px; }
+
+      .exp-item { grid-template-columns: 1fr; gap: 0.5rem; }
+
+      .project-cols { grid-template-columns: 1fr; gap: 2rem; }
+
+      .more-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+
+      footer { flex-direction: column; gap: 0.75rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <img src="assets/img/logo.png" alt="DAE Logo">
+      <span class="nav-name">Darrell DeMakes</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#more">More</a></li>
+      <li><a href="https://www.linkedin.com/in/ddemakes/" target="_blank" rel="noopener" class="nav-cta">LinkedIn</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Product Management Professional</p>
+      <h1 class="hero-name">Darrell<br><em>DeMakes</em></h1>
+      <p class="hero-title">Digital Product Leader &amp; Innovator</p>
+      <p class="hero-summary">Dynamic Product Management leader with a proven track record of successful app and platform launches. Expert in uniting business, technical, and creative teams to exceed expectations.</p>
+      <div class="hero-actions">
+        <a href="#experience" class="btn-primary">View Experience</a>
+        <a href="https://www.linkedin.com/in/ddemakes/" target="_blank" rel="noopener" class="btn-outline">LinkedIn</a>
+        <a href="https://github.com/ddemakes" target="_blank" rel="noopener" class="btn-outline">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <span class="hero-bg-text">PM</span>
+      <div class="hero-photo-wrap">
+        <img src="assets/img/Headshot.png" alt="Darrell DeMakes" class="hero-photo">
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Years Leading</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">20M+</div>
+          <div class="stat-label">App Downloads</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-label">Industries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-left">
+          <img src="assets/img/Headshot.png" alt="Darrell DeMakes" class="about-photo">
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/ddemakes/" target="_blank" rel="noopener" class="about-link">LinkedIn</a>
+            <a href="https://github.com/ddemakes" target="_blank" rel="noopener" class="about-link">GitHub</a>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>Hello! I'm Darrell DeMakes, a passionate and dynamic individual with a knack for bringing ideas to life. My journey has led me through various exciting roles, always with a focus on uniting diverse teams to create impactful digital experiences.</p>
+          <p>I thrive on leading projects from conception to successful launch, constantly learning and adapting to new challenges. Beyond my professional endeavors, I'm deeply involved in my community — hosting the Stamford AI Meetup and previously the Stamford Tech Meetup, fostering collaboration and knowledge sharing among fellow enthusiasts.</p>
+          <p>I hold a Bachelor of Science in Media Production, Management, and Technology from the University of Florida.</p>
+
+          <div class="competencies">
+            <div class="competency-item">Product Strategy &amp; Roadmap Development</div>
+            <div class="competency-item">Cross-Functional Team Leadership</div>
+            <div class="competency-item">AI Workflows for Product Management</div>
+            <div class="competency-item">Agile &amp; Scrum Methodologies</div>
+            <div class="competency-item">Market Research &amp; Competitive Analysis</div>
+            <div class="competency-item">User Experience (UX) Design</div>
+            <div class="competency-item">Data-Driven Decision Making</div>
+            <div class="competency-item">Stakeholder Management</div>
+            <div class="competency-item">Budget &amp; Resource Management</div>
+            <div class="competency-item">Innovative Product Launches</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="experience-list">
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-period">2014 – Present</div>
+            <div class="exp-company">Independent</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-role">Product Management Consultant — Digital Product Management</div>
+            <div class="exp-sub">
+              <div class="exp-sub-title">LaughMD App</div>
+              <ul class="exp-bullets">
+                <li>Created &amp; manage app to study stress &amp; pain relief during common medical treatments.</li>
+              </ul>
+            </div>
+            <div class="exp-sub">
+              <div class="exp-sub-title">Town of Westport, CT</div>
+              <ul class="exp-bullets">
+                <li>Trained 35 internal content managers on web CMS for a town of 25,000 people.</li>
+                <li>Produced tourism &amp; business development websites to attract visitors &amp; businesses.</li>
+              </ul>
+            </div>
+            <div class="exp-sub">
+              <div class="exp-sub-title">TheKnot.com (Formerly GigMaster.com)</div>
+              <ul class="exp-bullets">
+                <li>Created pricing &amp; promotion flexibility strategy for an online event booking platform.</li>
+                <li>Built automated e-commerce platform for event vendors to purchase SEM on the booking site.</li>
+              </ul>
+            </div>
+            <div class="exp-sub">
+              <div class="exp-sub-title">Level Up Village</div>
+              <ul class="exp-bullets">
+                <li>Migrated business workflow from spreadsheets to Salesforce.</li>
+                <li>Developed teacher training videos and documentation for best-selling 3-D printing course.</li>
+              </ul>
+            </div>
+            <div class="exp-sub">
+              <div class="exp-sub-title">The Game Agency</div>
+              <ul class="exp-bullets">
+                <li>Produced value-added software redemption website for Intel using CPU verification for PC and Android, supported by a $2-million marketing campaign.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-period">2013 – 2014</div>
+            <div class="exp-company">World Wrestling Entertainment</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-role">Product Manager – Mobile Apps &amp; Games</div>
+            <ul class="exp-bullets">
+              <li>Managed core WWE App, mobile games, and Xbox app.</li>
+              <li>Produced WWE App with over 20 million downloads across iOS, Android, and Windows Mobile.</li>
+              <li>Expanded digital PPV purchases on Xbox App to top 10 countries through a web e-commerce portal.</li>
+              <li>Managed creation, release &amp; refinement of John Cena Fast Lane, a cross-platform mobile racing game.</li>
+              <li>Created and maintained a mobile game roadmap and backlog featuring unique mobile products.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-period">2012 – 2013</div>
+            <div class="exp-company">The Walt Disney Company</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-role">Senior Producer – Digital Magazines and Comics</div>
+            <ul class="exp-bullets">
+              <li>Managed the timely delivery of assets to various output channels including Apple App Store.</li>
+              <li>Delivered a weekly schedule of digital Disney comics in the U.S. and managed delivery for Europe.</li>
+              <li>Managed technical relationship with 3rd-party digital magazine delivery platform Paperlit on iOS.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-period">2009 – 2012</div>
+            <div class="exp-company">Nokia</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-role">Marketing Liaison – Developer Product &amp; Support</div>
+            <ul class="exp-bullets">
+              <li>Supported Nokia App Store publishers with compelling digital product offerings.</li>
+              <li>Proactively communicated key publisher issues including reporting, payment, and monetization.</li>
+              <li>Editor of monthly Nokia Publisher Newsletter sent to 20,000+ publishers with a 40% open rate.</li>
+              <li>Hosted bi-weekly webinars to promote store upgrades to Reporting, Payments &amp; Monetization.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-period">2005 – 2009</div>
+            <div class="exp-company">A+E Networks</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-role">Product Development Lead – Advanced TV &amp; Emerging Media</div>
+            <ul class="exp-bullets">
+              <li>Produced groundbreaking new media products and led IT team and vendors.</li>
+              <li>Developed and launched the first mobile web sites and mobile video for History, A&amp;E, &amp; Biography.</li>
+              <li>Produced mobile live-streamed televised entertainment event <em>Criss Angel: Building Implosion Escape</em> with Sprint and MobiTV — a first of its kind.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="project-card">
+        <div class="project-tag">Current Role</div>
+        <h3 class="project-title">Associate Technical Product Manager</h3>
+        <p class="project-desc">Supporting a streaming product team by defining feature requirements, tracking metrics, and coordinating engineering and QA efforts for playback, ABR, DRM, and device functionalities. Translating product objectives into actionable backend tasks while gaining practical experience with media pipelines and operational telemetry.</p>
+        <div class="project-cols">
+          <div>
+            <div class="project-col-title">Responsibilities</div>
+            <ul class="project-list">
+              <li>Writing clear product requirements and acceptance criteria for playback and ingest features.</li>
+              <li>Managing tickets and sprint backlogs, triaging bugs, and creating user stories.</li>
+              <li>Monitoring streaming telemetry and reporting on key metrics like startup time, rebuffering, and CDN error rates.</li>
+              <li>Coordinating cross-functional QA and device certification for releases.</li>
+              <li>Assisting in incident investigation and post-mortem creation.</li>
+              <li>Supporting partner and platform onboarding activities.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="project-col-title">Required Skills</div>
+            <ul class="project-list">
+              <li>Foundational backend familiarity (Node/Python, SQL).</li>
+              <li>Proficiency with product and collaboration tools (Jira, GitHub, Postman).</li>
+              <li>Experience with observability and analytics tools (Datadog/Grafana).</li>
+              <li>Understanding of media-specific concepts (HLS/DASH, CDN, transcode pipelines).</li>
+              <li>Strong soft skills in communication, prioritization, and writing clear specifications.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE -->
+  <section id="more">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">More</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="more-grid">
+        <div>
+          <div class="more-col-title">Community</div>
+          <ul class="more-list">
+            <li><strong>Stamford AI Meetup</strong>Host — 2024–Present</li>
+            <li><strong>Stamford Tech Meetup</strong>Host — 2013–2018</li>
+            <li><strong>PTA Technology Representative</strong>Greenwich Public Schools — 2013–2014</li>
+            <li><strong>Emmy Advance Media Committee</strong>Membership Chair — 2004–2006</li>
+          </ul>
+        </div>
+        <div>
+          <div class="more-col-title">Training</div>
+          <ul class="more-list">
+            <li><strong>AI Prompt Writing &amp; Chatbot Building</strong>Section Online — July 2024</li>
+            <li><strong>Product Management</strong>General Assembly — 2016</li>
+            <li><strong>Digital Marketing &amp; Social Media Metrics</strong>Mediabistro — 2013</li>
+          </ul>
+        </div>
+        <div>
+          <div class="more-col-title">Education</div>
+          <ul class="more-list">
+            <li><strong>University of Florida</strong>B.S. in Media Production, Management, and Technology</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <p class="contact-eyebrow">Get in Touch</p>
+      <h2 class="contact-headline">Let's work<br><em style="font-family: var(--serif); font-style: italic;">together.</em></h2>
+      <p class="contact-sub">Open to new opportunities in product management and digital strategy.</p>
+      <div class="contact-buttons">
+        <a href="https://www.linkedin.com/in/ddemakes/" target="_blank" rel="noopener" class="btn-primary">Connect on LinkedIn</a>
+        <a href="https://github.com/ddemakes" target="_blank" rel="noopener" class="btn-outline">View GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="assets/img/logo.png" alt="DAE Logo">
+      <span style="font-family: var(--serif); font-size: 1rem; color: var(--ink-light);">Darrell DeMakes</span>
+    </div>
+    <span class="footer-copy">© 2025 Darrell DeMakes. All rights reserved.</span>
+  </footer>
+
+  <script>
+    // Scroll-triggered fade-in for experience items
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.exp-item').forEach(el => observer.observe(el));
+
+    // Active nav highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - 120) current = section.id;
+      });
+      navLinks.forEach(a => {
+        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
+      });
+    });
+  </script>
+</body>
+</html>
