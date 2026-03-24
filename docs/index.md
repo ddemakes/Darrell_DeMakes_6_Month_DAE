@@ -32,7 +32,3 @@ This role focuses on supporting a streaming product team by defining feature req
 - Experience with observability and analytics tools (Datadog/Grafana).
 - Understanding of media-specific concepts (HLS/DASH, CDN, transcode pipelines).
 - Strong soft skills in communication, prioritization, and writing clear specifications.
-
-<div class="logo-container">
-    <img src="assets/img/logo.png" alt="DAE Logo" style="max-width: 150px; margin-top: 20px;">
-</div>

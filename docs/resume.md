@@ -74,6 +74,7 @@ Dynamic Product Management leader with a proven track record of successful app a
 ---
 
 ## Membership
+- New England Regional Manager - AI Collective - 2026-Present
 - Host: Stamford AI Meetup — 2024–Present  
 - Host: Stamford Tech Meetup — 2013–2018  
 - Member: PTA Technology Representative — Greenwich Public Schools — 2013–2014  

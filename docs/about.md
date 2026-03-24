@@ -17,7 +17,5 @@ Beyond my professional endeavors, I'm deeply involved in my community. I've had 
 I hold a Bachelor of Science in Media Production, Management, and Technology from the University of Florida.
 
 ### Community Involvement
+- New England Regional Manager - AI Collective - 2026-Present
 - Host: Stamford AI Meetup — 2024–Present
-- Host: Stamford Tech Meetup — 2013–2018
-- Member: PTA Technology Representative — Greenwich Public Schools — 2013–2014
-- Membership Chair: Emmy Advance Media Committee — 2004–2006
