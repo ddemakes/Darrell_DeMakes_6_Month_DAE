@@ -1,4 +1,15 @@
 ---
 ---
 
-@import 'jekyll-theme-cayman';
+@import "{{ site.theme }}";
+
+/* Shorter header */
+.page-header {
+  padding: 1.5rem 2rem !important;
+}
+
+/* Smaller buttons */
+.btn {
+  padding: 0.35rem 0.8rem !important;
+  font-size: 0.75rem !important;
+}
