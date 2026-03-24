@@ -2,6 +2,8 @@ title: Darrell DeMakes Professional Portfolio
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
+linkedin_username: ddemakes
+logo: assets/img/logo.png
 
 header_pages:
   - projects.md

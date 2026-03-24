@@ -13,3 +13,15 @@
   padding: 0.35rem 0.8rem !important;
   font-size: 0.75rem !important;
 }
+
+/* Smaller DAE logo in header */
+.logo-container img {
+  max-width: 60px !important;
+  margin-top: 8px !important;
+}
+
+/* Suppress Home nav link on homepage only */
+body.page-home .site-nav a[href="/Darrell_DeMakes_6_Month_DAE/"],
+body.page-home .site-nav a[href="/"] {
+  display: none !important;
+}
