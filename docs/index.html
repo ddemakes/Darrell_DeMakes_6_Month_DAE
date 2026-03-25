@@ -391,12 +391,17 @@
       gap: 3rem;
       padding: 2.5rem 0;
       border-bottom: 1px solid var(--rule);
-      opacity: 0;
-      transform: translateY(20px);
+      opacity: 1;
+      transform: translateY(0);
       transition: opacity 0.5s, transform 0.5s;
     }
 
-    .exp-item.visible { opacity: 1; transform: none; }
+    .exp-item.animate {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .exp-item.animate.visible { opacity: 1; transform: none; }
 
     .exp-meta {}
 
@@ -462,7 +467,17 @@
       border-bottom: 1px solid var(--rule);
     }
 
-    /* ── PROJECTS ── */
+    /* ── PROJECTS (new) ── */
+    #newprojects {
+      background: var(--ink);
+      color: var(--cream);
+    }
+
+    #newprojects .section-title { color: var(--cream); }
+    #newprojects .section-number { color: #7aadcc; }
+    #newprojects .section-rule { background: rgba(255,255,255,0.15); }
+
+    /* ── ROLE ── */
     #projects {
       background: var(--ink);
       color: var(--cream);
@@ -545,51 +560,6 @@
       color: rgba(122,173,204,0.6);
     }
 
-    /* ── MEMBERSHIP / TRAINING ── */
-    #more {
-      background: #fff;
-      border-top: 1px solid var(--rule);
-    }
-
-    .more-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 4rem;
-    }
-
-    .more-col-title {
-      font-family: var(--serif);
-      font-size: 1.4rem;
-      font-weight: 400;
-      color: var(--ink);
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 2px solid var(--accent);
-    }
-
-    .more-list {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.9rem;
-    }
-
-    .more-list li {
-      font-size: 0.88rem;
-      color: var(--ink-light);
-      line-height: 1.55;
-      padding-left: 0.75rem;
-      border-left: 2px solid var(--rule);
-    }
-
-    .more-list li strong {
-      display: block;
-      font-weight: 500;
-      color: var(--ink);
-      font-size: 0.82rem;
-      letter-spacing: 0.03em;
-    }
-
     /* ── CONTACT / FOOTER ── */
     #contact {
       background: var(--cream);
@@ -621,7 +591,46 @@
     .contact-sub {
       font-size: 0.9rem;
       color: var(--ink-muted);
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-details {
+      list-style: none;
+      margin-bottom: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      text-align: left;
+      display: inline-flex;
+    }
+
+    .contact-details li {
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      display: flex;
+      gap: 0.6rem;
+      align-items: baseline;
+    }
+
+    .contact-label {
+      font-weight: 500;
+      color: var(--ink);
+      min-width: 70px;
+      font-size: 0.9rem;
+    }
+
+    .contact-details a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .contact-details a:hover { opacity: 0.7; }
+
+    .contact-closing {
+      font-size: 0.9rem;
+      color: var(--ink-muted);
+      margin-bottom: 2rem;
     }
 
     .contact-buttons {
@@ -709,9 +718,9 @@
     </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#more">More</a></li>
+      <li><a href="#newprojects">Projects</a></li>
+      <li><a href="#experience">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li><a href="https://www.linkedin.com/in/ddemakes/" target="_blank" rel="noopener" class="nav-cta">LinkedIn</a></li>
     </ul>
   </nav>
@@ -724,7 +733,7 @@
       <p class="hero-title">Digital Product Leader &amp; Innovator</p>
       <p class="hero-summary">Dynamic Product Management leader with a proven track record of successful app and platform launches. Expert in uniting business, technical, and creative teams to exceed expectations.</p>
       <div class="hero-actions">
-        <a href="#experience" class="btn-primary">View Experience</a>
+        <a href="#experience" class="btn-primary">View Resume</a>
         <a href="https://www.linkedin.com/in/ddemakes/" target="_blank" rel="noopener" class="btn-outline">LinkedIn</a>
         <a href="https://github.com/ddemakes" target="_blank" rel="noopener" class="btn-outline">GitHub</a>
       </div>
@@ -732,7 +741,7 @@
     <div class="hero-right">
       <span class="hero-bg-text">PM</span>
       <div class="hero-photo-wrap">
-        <img src="assets/img/headshot.png" alt="Darrell DeMakes" class="hero-photo">
+        <img src="assets/img/Headshot.png" alt="Darrell DeMakes" class="hero-photo">
       </div>
       <div class="hero-stats">
         <div class="stat-item">
@@ -761,43 +770,114 @@
       </div>
       <div class="about-grid">
         <div class="about-left">
-          <img src="assets/img/headshot.png" alt="Darrell DeMakes" class="about-photo">
+          <img src="assets/img/Headshot.png" alt="Darrell DeMakes" class="about-photo">
           <div class="about-links">
             <a href="https://www.linkedin.com/in/ddemakes/" target="_blank" rel="noopener" class="about-link">LinkedIn</a>
             <a href="https://github.com/ddemakes" target="_blank" rel="noopener" class="about-link">GitHub</a>
           </div>
         </div>
         <div class="about-text">
-          <p>Hello! I'm Darrell DeMakes, a passionate and dynamic individual with a knack for bringing ideas to life. My journey has led me through various exciting roles, always with a focus on uniting diverse teams to create impactful digital experiences.</p>
+          <p>Hello! I'm Darrell DeMakes, a passionate and dynamic individual with a knack for bringing ideas to life. My journey has led me through various exciting roles, always with a focus on uniting diverse teams to create impactful digital experiences. I graduate July 16, 2026.</p>
           <p>I thrive on leading projects from conception to successful launch, constantly learning and adapting to new challenges. Beyond my professional endeavors, I'm deeply involved in my community — hosting the Stamford AI Meetup and previously the Stamford Tech Meetup, fostering collaboration and knowledge sharing among fellow enthusiasts.</p>
           <p>I hold a Bachelor of Science in Media Production, Management, and Technology from the University of Florida.</p>
 
-          <div class="competencies">
-            <div class="competency-item">Product Strategy &amp; Roadmap Development</div>
-            <div class="competency-item">Cross-Functional Team Leadership</div>
-            <div class="competency-item">AI Workflows for Product Management</div>
-            <div class="competency-item">Agile &amp; Scrum Methodologies</div>
-            <div class="competency-item">Market Research &amp; Competitive Analysis</div>
-            <div class="competency-item">User Experience (UX) Design</div>
-            <div class="competency-item">Data-Driven Decision Making</div>
-            <div class="competency-item">Stakeholder Management</div>
-            <div class="competency-item">Budget &amp; Resource Management</div>
-            <div class="competency-item">Innovative Product Launches</div>
+          <div style="margin-top: 2.5rem;">
+            <div class="exp-sub-title" style="margin-bottom: 1.25rem;">Technical Product Manager</div>
+            <p style="font-size:0.9rem; color:var(--ink-light); line-height:1.8; margin-bottom:1.5rem;">Supporting a streaming product team by defining feature requirements, tracking metrics, and coordinating engineering and QA efforts for playback, ABR, DRM, and device functionalities. Translating product objectives into actionable backend tasks while gaining practical experience with media pipelines and operational telemetry.</p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+              <div>
+                <div class="exp-sub-title" style="margin-bottom:0.75rem;">Responsibilities</div>
+                <ul class="exp-bullets">
+                  <li>Writing clear product requirements and acceptance criteria for playback and ingest features.</li>
+                  <li>Managing tickets and sprint backlogs, triaging bugs, and creating user stories.</li>
+                  <li>Monitoring streaming telemetry and reporting on key metrics like startup time, rebuffering, and CDN error rates.</li>
+                  <li>Coordinating cross-functional QA and device certification for releases.</li>
+                  <li>Assisting in incident investigation and post-mortem creation.</li>
+                  <li>Supporting partner and platform onboarding activities.</li>
+                </ul>
+              </div>
+              <div>
+                <div class="exp-sub-title" style="margin-bottom:0.75rem;">Required Skills</div>
+                <ul class="exp-bullets">
+                  <li>Foundational backend familiarity (Node/Python, SQL).</li>
+                  <li>Proficiency with product and collaboration tools (Jira, GitHub, Postman).</li>
+                  <li>Experience with observability and analytics tools (Datadog/Grafana).</li>
+                  <li>Understanding of media-specific concepts (HLS/DASH, CDN, transcode pipelines).</li>
+                  <li>Strong soft skills in communication, prioritization, and writing clear specifications.</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
+  <!-- PROJECTS -->
+  <section id="newprojects">
     <div class="section-inner">
       <div class="section-header">
         <span class="section-number">02</span>
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-rule"></div>
+      </div>
+      <div class="project-card">
+        <h3 class="project-title">StreamOps Agent — LLM-powered assistant for streaming TPM workflows</h3>
+        <p class="project-desc">This project aims to build a MERN-stack prototype that ingests simulated streaming telemetry and connects to a retrieval-augmented LLM agent. This agent will detect anomalies, draft incident post-mortems, generate GitHub issues with acceptance criteria, and produce OpenAPI skeletons from plain-English requirements.</p>
+        <p class="project-desc">The tool demonstrates the operational, integration, and product-decision tasks of a Technical Product Manager for streaming platforms, providing interview-ready artifacts such as a deployed demo, runbooks, and API specifications.</p>
+        <div class="project-cols">
+          <div>
+            <div class="project-col-title">Goals</div>
+            <ul class="project-list">
+              <li>Implement a telemetry ingestion + KPI aggregation pipeline.</li>
+              <li>Build an agent (LangChain orchestration) using RAG (vector store) to draft incident post-mortems and convert plain-English requests into OpenAPI skeletons and GitHub issue payloads.</li>
+              <li>Deliver deployable artifacts (GitHub repo, deployed demo, Postman/OpenAPI files, runbook templates, and a demo video) within a 12-week timeline.</li>
+            </ul>
+          </div>
+          <div>
+            <div class="project-col-title">Key Features</div>
+            <ul class="project-list">
+              <li>Telemetry ingestion API and KPI aggregator job.</li>
+              <li>React dashboard for KPI visualization and anomaly alerts.</li>
+              <li>Agent endpoints for summarizing anomalies, auto-drafting post-mortems, generating OpenAPI skeletons, and creating GitHub issue payloads.</li>
+              <li>RAG capability for agent recommendations citing runbooks and logs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Resume</h2>
         <div class="section-rule"></div>
       </div>
       <div class="experience-list">
+
+        <!-- CORE COMPETENCIES -->
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-company">Core Competencies</div>
+          </div>
+          <div class="exp-content">
+            <div class="competencies" style="margin-top:0;">
+              <div class="competency-item">Product Strategy &amp; Roadmap Development</div>
+              <div class="competency-item">Cross-Functional Team Leadership</div>
+              <div class="competency-item">AI Workflows for Product Management</div>
+              <div class="competency-item">Agile &amp; Scrum Methodologies</div>
+              <div class="competency-item">Market Research &amp; Competitive Analysis</div>
+              <div class="competency-item">User Experience (UX) Design</div>
+              <div class="competency-item">Data-Driven Decision Making</div>
+              <div class="competency-item">Stakeholder Management</div>
+              <div class="competency-item">Budget &amp; Resource Management</div>
+              <div class="competency-item">Innovative Product Launches</div>
+            </div>
+          </div>
+        </div>
 
         <div class="exp-item">
           <div class="exp-meta">
@@ -905,91 +985,65 @@
           </div>
         </div>
 
+        <!-- MEMBERSHIP -->
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-company">Membership</div>
+          </div>
+          <div class="exp-content">
+            <ul class="exp-bullets">
+              <li>New England Regional Manager — AI Collective — 2026–Present</li>
+              <li>Host — Stamford AI Meetup — 2024–Present</li>
+              <li>Host — Stamford Tech Meetup — 2013–2018</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- TRAINING -->
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-company">Training</div>
+          </div>
+          <div class="exp-content">
+            <ul class="exp-bullets">
+              <li>AI Prompt Writing &amp; Chatbot Building — Section Online — July 2024</li>
+              <li>Product Management — General Assembly — 2016</li>
+              <li>Digital Marketing &amp; Social Media Metrics — Mediabistro — 2013</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="exp-item">
+          <div class="exp-meta">
+            <div class="exp-company">Education</div>
+          </div>
+          <div class="exp-content">
+            <div class="exp-role">University of Florida</div>
+            <ul class="exp-bullets">
+              <li>B.S. in Media Production, Management, and Technology</li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-number">03</span>
-        <h2 class="section-title">Projects</h2>
-        <div class="section-rule"></div>
-      </div>
-      <div class="project-card">
-        <div class="project-tag">Current Role</div>
-        <h3 class="project-title">Associate Technical Product Manager</h3>
-        <p class="project-desc">Supporting a streaming product team by defining feature requirements, tracking metrics, and coordinating engineering and QA efforts for playback, ABR, DRM, and device functionalities. Translating product objectives into actionable backend tasks while gaining practical experience with media pipelines and operational telemetry.</p>
-        <div class="project-cols">
-          <div>
-            <div class="project-col-title">Responsibilities</div>
-            <ul class="project-list">
-              <li>Writing clear product requirements and acceptance criteria for playback and ingest features.</li>
-              <li>Managing tickets and sprint backlogs, triaging bugs, and creating user stories.</li>
-              <li>Monitoring streaming telemetry and reporting on key metrics like startup time, rebuffering, and CDN error rates.</li>
-              <li>Coordinating cross-functional QA and device certification for releases.</li>
-              <li>Assisting in incident investigation and post-mortem creation.</li>
-              <li>Supporting partner and platform onboarding activities.</li>
-            </ul>
-          </div>
-          <div>
-            <div class="project-col-title">Required Skills</div>
-            <ul class="project-list">
-              <li>Foundational backend familiarity (Node/Python, SQL).</li>
-              <li>Proficiency with product and collaboration tools (Jira, GitHub, Postman).</li>
-              <li>Experience with observability and analytics tools (Datadog/Grafana).</li>
-              <li>Understanding of media-specific concepts (HLS/DASH, CDN, transcode pipelines).</li>
-              <li>Strong soft skills in communication, prioritization, and writing clear specifications.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MORE -->
-  <section id="more">
-    <div class="section-inner">
-      <div class="section-header">
-        <span class="section-number">04</span>
-        <h2 class="section-title">More</h2>
-        <div class="section-rule"></div>
-      </div>
-      <div class="more-grid">
-        <div>
-          <div class="more-col-title">Community</div>
-          <ul class="more-list">
-            <li><strong>Stamford AI Meetup</strong>Host — 2024–Present</li>
-            <li><strong>Stamford Tech Meetup</strong>Host — 2013–2018</li>
-            <li><strong>PTA Technology Representative</strong>Greenwich Public Schools — 2013–2014</li>
-            <li><strong>Emmy Advance Media Committee</strong>Membership Chair — 2004–2006</li>
-          </ul>
-        </div>
-        <div>
-          <div class="more-col-title">Training</div>
-          <ul class="more-list">
-            <li><strong>AI Prompt Writing &amp; Chatbot Building</strong>Section Online — July 2024</li>
-            <li><strong>Product Management</strong>General Assembly — 2016</li>
-            <li><strong>Digital Marketing &amp; Social Media Metrics</strong>Mediabistro — 2013</li>
-          </ul>
-        </div>
-        <div>
-          <div class="more-col-title">Education</div>
-          <ul class="more-list">
-            <li><strong>University of Florida</strong>B.S. in Media Production, Management, and Technology</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- CONTACT -->
   <section id="contact">
     <div class="contact-inner">
       <p class="contact-eyebrow">Get in Touch</p>
       <h2 class="contact-headline">Let's work<br><em style="font-family: var(--serif); font-style: italic;">together.</em></h2>
-      <p class="contact-sub">Open to new opportunities in product management and digital strategy.</p>
+      <p class="contact-sub">I'm always open to new opportunities and collaborations. Feel free to reach out through any of the channels below.</p>
+      <ul class="contact-details">
+        <li><span class="contact-label">LinkedIn</span><a href="https://www.linkedin.com/in/ddemakes/" target="_blank" rel="noopener">linkedin.com/in/ddemakes</a></li>
+        <li><span class="contact-label">Email</span><a href="/cdn-cgi/l/email-protection#7216130000171e1e32333b311d1e1e1711061b04175c111d1f"><span class="__cf_email__" data-cfemail="afcbceddddcac3c3efeee6ecc0c3c3caccdbc6d9ca81ccc0c2">[email&#160;protected]</span></a></li>
+        <li><span class="contact-label">Phone</span><a href="tel:6316295687">631-629-5687</a></li>
+        <li><span class="contact-label">Location</span><span>Stamford, CT</span></li>
+      </ul>
+      <p class="contact-closing">I look forward to connecting with you!</p>
       <div class="contact-buttons">
         <a href="https://www.linkedin.com/in/ddemakes/" target="_blank" rel="noopener" class="btn-primary">Connect on LinkedIn</a>
         <a href="https://github.com/ddemakes" target="_blank" rel="noopener" class="btn-outline">View GitHub</a>
@@ -1006,18 +1060,21 @@
     <span class="footer-copy">© 2025 Darrell DeMakes. All rights reserved.</span>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Scroll-triggered fade-in for experience items
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.05 });
 
-    document.querySelectorAll('.exp-item').forEach(el => observer.observe(el));
+    document.querySelectorAll('.exp-item').forEach(el => {
+      el.classList.add('animate');
+      observer.observe(el);
+    });
 
     // Active nav highlighting
     const sections = document.querySelectorAll('section[id]');
@@ -1026,12 +1083,3 @@
     window.addEventListener('scroll', () => {
       let current = '';
       sections.forEach(section => {
-        if (window.scrollY >= section.offsetTop - 120) current = section.id;
-      });
-      navLinks.forEach(a => {
-        a.style.color = a.getAttribute('href') === '#' + current ? 'var(--accent)' : '';
-      });
-    });
-  </script>
-</body>
-</html>
