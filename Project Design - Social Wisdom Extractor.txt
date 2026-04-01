@@ -1,0 +1,26 @@
+Project Design Document — Social Wisdom Extractor
+
+1. Project Title & Version Control
+Project title: XXXX
+Version & date: DRAFT — 03/31/2026
+Change log: Initial project definition and sprint plan.
+
+2. Project Summary (2–3 sentences)
+
+3. Problem Statement / Use Case
+
+4. Goals and Objectives
+
+5. Key Features / Functions
+
+6. Tech Stack and Tools
+
+7. Architecture / Workflow (plain description)
+
+8. Timeline / Weekly Milestones (4-week sprint shown; this project spans 12 weeks)
+
+9. Risks and Risk Mitigation
+
+10. Evaluation Criteria
+
+11. Future Considerations
