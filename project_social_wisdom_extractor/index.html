@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="description" content="Social Wisdom Extractor — surface insights from social content." />
+
+    <title>Social Wisdom Extractor</title>
+
+    <!-- PWA manifest -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="favicon.ico" />
+
+    <style>
+      /* ── Reset & base ── */
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+      :root {
+        --bg:       #1a1a2e;
+        --surface:  #16213e;
+        --accent:   #0f3460;
+        --highlight:#e94560;
+        --text:     #eaeaea;
+        --muted:    #8888aa;
+        --radius:   12px;
+        --font:     'Segoe UI', system-ui, sans-serif;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: var(--font);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* ── Header ── */
+      header {
+        background: var(--surface);
+        padding: 1rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--accent);
+      }
+
+      header h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+
+      header h1 span { color: var(--highlight); }
+
+      /* ── Main ── */
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--accent);
+        border-radius: var(--radius);
+        padding: 2rem;
+        width: 100%;
+        max-width: 520px;
+        text-align: center;
+      }
+
+      .card h2 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+      .card p  { color: var(--muted); font-size: 0.95rem; line-height: 1.6; }
+
+      /* ── Status dot ── */
+      #status {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+
+      #status-dot {
+        width: 8px; height: 8px;
+        border-radius: 50%;
+        background: #888;
+        transition: background 0.3s;
+      }
+
+      #status-dot.ready  { background: #4caf50; }
+      #status-dot.error  { background: var(--highlight); }
+
+      /* ── Footer ── */
+      footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.8rem;
+        color: var(--muted);
+        border-top: 1px solid var(--accent);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Social <span>Wisdom</span> Extractor</h1>
+      <div id="status">
+        <div id="status-dot"></div>
+        <span id="status-text">Initializing…</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <h2>Welcome</h2>
+        <p>Surface insights and distilled wisdom from social content — powered by AI.</p>
+      </div>
+
+      <!-- App renders here -->
+      <div id="app"></div>
+    </main>
+
+    <footer>
+      Social Wisdom Extractor &mdash; v0.1.0 &mdash; Draft
+    </footer>
+
+    <!-- Single JS file — all logic lives here -->
+    <script src="app.js" defer></script>
+  </body>
+</html>
