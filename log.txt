@@ -1,1 +1,10 @@
+260414-T W3D2 11:15a Worked with Kay to engineer the video transcription functionality.
+
+Did a cost analysis of using Proactive.ai or Transcribe24.com.
+
+﻿﻿https://docs.google.com/spreadsheets/d/1NqRNW6kjGE1Zrxe5OFYLgp3lTwCb9rX7eZWWZlNShxU/edit?usp=sharing
+﻿
+﻿Doing a deeper dive into an email solution.
+
+
 260413-M W3D1 Figured out cost for various plans that do transcription to back into what it might cost as an app
