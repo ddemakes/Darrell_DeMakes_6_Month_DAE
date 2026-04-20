@@ -1,3 +1,11 @@
+260420-M W4D1 2:30p Purchased thepinbook.com
+ Set up Cloudflare for DNS management
+ Authenticated thepinbook.com with Brevo
+ Set up reply.thepinbook.com as your inbound subdomain
+ Registered the inbound webhook with Brevo
+ Confirmed live email parsing — emails sent to *@reply.thepinbook.com are received, parsed into JSON, and delivered to your webhook
+
+
 260414-T W3D2 11:15a Worked with Kay to engineer the video transcription functionality.
 
 Did a cost analysis of using Proactive.ai or Transcribe24.com.
