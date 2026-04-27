@@ -1,3 +1,5 @@
+260421-T W4D2 2:30p Created a web page that displays all rubric items.
+
 260420-M W4D1 2:30p Purchased thepinbook.com
  Set up Cloudflare for DNS management
  Authenticated thepinbook.com with Brevo

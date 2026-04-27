@@ -74,9 +74,9 @@ function renderPins() {
   feedEl.innerHTML = "";
 
   // JS2-7: loop structure  |  JS2-8: iterate array, access elements
-  for (let i = 0; i < pins.length; i++) {
+  for (let currentPinIndex = 0; currentPinIndex < pins.length; currentPinIndex++) {
     pinCount++;                              // increments the int variable
-    feedEl.innerHTML += buildPinCardHTML(pins[i], i);
+    feedEl.innerHTML += buildPinCardHTML(pins[currentPinIndex], currentPinIndex);
   }
 
   // JS2-3: getElementsByClassName — used after cards are rendered
